@@ -27,6 +27,7 @@ offense-and-detection-labs/
 ├── blue-team/
 └── README.md
 ```
+---
 
 ### 🔴 Red Team
 
