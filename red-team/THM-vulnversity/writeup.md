@@ -74,7 +74,7 @@ WantedBy=multi-user.target
 ```
 
 The vulnerable ```systemctl``` binary was then used to load and start the malicious service while a Netcat listener was active. This resulted in a root-level reverse shell.
-
+![Root Reverse Shell obtained](screenshots/root.png)
 ---
 
 ## Conclusion & Key Takeaways
