@@ -59,12 +59,12 @@ Most blue-team writeups are derived from SOC-oriented labs and from analyzing th
 
 Each writeup follows a consistent analytical structure:
 
-- **Context** — what system or environment is involved  
-- **What Happened** — attack or suspicious activity  
-- **Detection** — logs, alerts, indicators of compromise  
-- **Response** — containment or remediation steps  
-- **Prevention** — hardening or long-term fixes  
-- **Key Takeaways** — concise lessons learned  
+- **Context**: what system or environment is involved  
+- **What Happened**: attack or suspicious activity  
+- **Detection**: logs, alerts, indicators of compromise  
+- **Response**: containment or remediation steps  
+- **Prevention**: hardening or long-term fixes  
+- **Key Takeaways**: concise lessons learned  
 
 The focus is on **understanding and reasoning**, not on tool usage or command dumping.
 
