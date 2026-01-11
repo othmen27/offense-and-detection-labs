@@ -2,11 +2,10 @@
 
 **Focus:** Web Exploitation, WordPress Attacks, Credential Reuse, Internal Pivoting, Jenkins Abuse  
 **Target OS:** Linux  
-**Engagement Type:** Black-box Penetration Test (Roleplay)
 
 ---
 
-## Executive Summary
+## Overview
 
 This assessment simulated a black-box penetration test against an internal environment scheduled for production release.  
 The engagement resulted in **full system compromise**, starting from a publicly exposed WordPress instance and ending with **root access** through credential reuse and internal service abuse.
