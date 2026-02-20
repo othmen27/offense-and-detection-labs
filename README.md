@@ -6,7 +6,7 @@ The goal of this project is not to provide step-by-step walkthroughs, but to **c
 
 ---
 
-## 🎯 Project Goals
+##  Project Goals
 
 - Strengthen understanding of attacker behavior through hands-on offensive labs  
 - Translate offensive actions into defensive **logs, alerts, and indicators**  
@@ -17,7 +17,7 @@ This repository reflects a **red + blue (purple-team mindset)** approach, where 
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 The repository is split into two main sections:
 
@@ -29,7 +29,7 @@ offense-and-detection-labs/
 ```
 ---
 
-### 🔴 Red Team
+###  Red Team
 
 Contains writeups focused on:
 - exploitation
@@ -42,7 +42,7 @@ Writeups are **room- or lab-based** (e.g., TryHackMe labs) rather than strictly 
 
 ---
 
-### 🔵 Blue Team
+###  Blue Team
 
 Contains writeups focused on:
 - log analysis
@@ -55,7 +55,7 @@ Most blue-team writeups are derived from SOC-oriented labs and from analyzing th
 
 ---
 
-## ✍️ Writeup Philosophy
+##  Writeup Philosophy
 
 Each writeup follows a consistent analytical structure:
 
@@ -70,7 +70,7 @@ The focus is on **understanding and reasoning**, not on tool usage or command du
 
 ---
 
-## 📸 Screenshots & Evidence
+##  Screenshots & Evidence
 
 Screenshots are included only when they:
 - provide evidence  
@@ -81,7 +81,7 @@ They are stored locally within each writeup to keep documentation self-contained
 
 ---
 
-## ⚠️ Scope & Ethics
+##  Scope & Ethics
 
 - All content is based on **controlled lab environments**  
 - No real-world targets or unauthorized systems  
@@ -90,7 +90,7 @@ They are stored locally within each writeup to keep documentation self-contained
 
 ---
 
-## 🚧 Ongoing Work
+##  Ongoing Work
 
 This repository is actively updated as labs are revisited and new insights are gained. Some writeups represent a **second pass** over previously completed labs, incorporating improved understanding from offensive experience.
 
